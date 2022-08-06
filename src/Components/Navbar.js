@@ -15,7 +15,7 @@ function Navbar() {
     }
   }
 
-  window.addEventListener('resize', showButton)
+//   window.addEventListener('resize', showButton)
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = ()=> setClick(false)
