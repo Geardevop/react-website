@@ -1,18 +1,34 @@
 
 import './App.css';
 import Navbar from './Components/Navbar'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
-function App() {
+const App = () => {
   return (
-    <><Router>
-        <Navbar></Navbar>
-        <Routes>
-          <Route path='/' exact></Route>
-        </Routes>
-      </Router>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="About" element={<About />} />
+      </Routes>
     </>
   );
+}
+
+const Landing = () => {
+  return(
+    <div>
+      <p>Landing page</p>
+    </div>
+  )
+}
+
+const About = () => {
+  return(
+    <div>
+      <p>About page</p>
+    </div>
+  )
 }
 
 export default App;
