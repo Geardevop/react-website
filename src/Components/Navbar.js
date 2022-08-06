@@ -1,7 +1,8 @@
 import React, {useState}from 'react'
 import {Link} from 'react-router-dom'
-import { Button } from './Button'
-import './Navbar.css'
+// import { Button } from './Button' 
+// แก้ปุ่มด้วย ดูการเขียนว่าถูกต้องมั้ย
+import './Navbar.css' 
 
 function Navbar() {
   const [click, setClick] = useState(false)
@@ -15,7 +16,7 @@ function Navbar() {
     }
   }
 
-//   window.addEventListener('resize', showButton)
+  window.addEventListener('resize', showButton)
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = ()=> setClick(false)
@@ -52,7 +53,8 @@ function Navbar() {
                     </Link>
                 </li>
             </ul>
-            {button && <Button buttonStyle='btn--outline' >Sign UP</Button>}
+            {/* {button && <Button buttonStyle='btn--outline' >Sign UP</Button>} */}
+            {/* เป็นที่ปุ่ม */}
         </div>
     </nav>
    </>

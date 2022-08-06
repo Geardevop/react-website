@@ -1,12 +1,12 @@
 
 import './App.css';
-// import Navbar from './Components/Navbar'
+import Navbar from './Components/Navbar'
 import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="About" element={<About />} />
